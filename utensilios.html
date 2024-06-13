@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favIcon.png" type="image/x-icon">
+    <title>RAMEN YAMMY</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tiendaStyle.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- CABECERA -->
+<header>
+    <div class="logo">
+        <a href="index.html" class="logoImg"><img src="./img/logoY.png" width="64px" height="64px"></a>
+        <a href="index.html"><h1>RAMEN YAMMY</h1></a>
+    </div>
+    <nav>
+        <li><a href="#"><button class="reserve-btn" type="button">RESERVAR</button></a></li>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="blog.html">Blog de Noticias</a></li>
+            <li><a href="#" class="active">Tienda</a></li>
+        </ul>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <label for="check" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="actions">
+        <div class="cart-container">
+            <span id="cart-counter">0</span>
+            <a href="cesta.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a href="user.html" class="cart"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+</header>
+
+<!-- PRODUCT SECTION -->
+<div class="wrapper">
+    <h1 id="category-title"><span class="t1">Todos los</span> <span class="t2">UTENSILIOS</span></h1>
+    <div class="shop">
+        <div class="navsideContainer">
+            <div class="navSide">
+                <div class="category">
+                    <h3>Categorias:</h3>
+                    <div class="category-list">
+                        <a href="tienda.html">Todos los productos</a>
+                        <a href="./fideos.html?categoria=fideos" class="btn">Fideos</a>
+                        <a href="./salsas.html?categoria=salsas" class="btn">Salsas</a>
+                        <a href="./condimentos.html?categoria=condimentos" class="btn">Condimentos</a>
+                        <a href="#" class="btn active">Utensilios</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="price-filter">
+                    <h3>Filtrar por precio:</h3>
+                    <div class="input-box">
+                        <input type="text" class="price-text" value="0">
+                        <span class="separator">-</span>
+                        <input type="text" class="price-text" value="1000">
+                    </div>
+                </div>
+                <hr>
+                <div class="general-filter">
+                    <h3>Filtro general:</h3>
+                    <ul class="list-items">
+                        <li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">
+                                Cuchillos
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">
+                                Palillos
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">
+                                Cuencos
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">
+                                Especies
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">
+                                Base
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="prod-container" class="prod-container">
+            
+            <!-- Este contenido se va a cargar con JS -->
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <a href="#home"><img src="./img/logoY.png" alt="" class="logo"></a>
+    <div class="social-container">
+        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+    <ul class="footer-menu">
+        <a class="menu-item">Legal</a>
+        <a class="menu-item">Cookies</a>
+        <a href="privacidad.html" class="menu-item">Privacidad</a>
+        <a class="menu-item">Envíos</a>
+        <a class="menu-item">Rembolsos</a>
+    </ul>
+    <span class="copyright">© 2024 RAMEN YAMMY. All rights reserved. | Designed by Christian Andreas Brun</span>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="./js/productosArray.js" defer></script>
+<script src="./js/tiendaScript.js" defer></script>
+<script src="./js/script.js" defer></script>
+
+</body>
+</html>
+
+<!--
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+||                                  ||
+||   By  Christian Andreas Brun     ||
+||                                  ||
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+-->

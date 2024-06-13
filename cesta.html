@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favIcon.png" type="image/x-icon">
+    <title>RAMEN YAMMY</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cestaStyle.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!-- CABECERA -->
+<header>
+    <div class="logo">
+        <a href="index.html" class="logoImg"><img src="./img/logoY.png" width="64px" height="64px"></a>
+        <a href="index.html"><h1>RAMEN YAMMY</h1></a>
+    </div>
+    <nav>
+        <li><a href="#"><button class="reserve-btn" type="button">RESERVAR</button></a></li>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="blog.html">Blog de Noticias</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <label for="check" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="actions">
+        <a href="cesta.html"><i class="fa-solid fa-cart-shopping active"></i></a>
+        <a href="user.html"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+</header>
+
+<!-- PRODUCT SECTION -->
+
+<div class="wrapper">
+    <h1><span class="t1">Tú</span><span class="t2"> CESTA</span></h1>
+    <div class="cart">
+        <div class="incart-container">
+            <div id="cart-action" class="cart-action disabled">
+                <div class="cart-action-left">
+                    <button id="empty-btn" class="empty-btn"><i class="fa-solid fa-recycle"></i> VACIAR CESTA</button>
+                    <a href="tienda.html" class="back-btn"><i class="fa-solid fa-caret-left"></i> SEGUIR COMPRANDO</a>
+                </div>
+            </div>
+            
+            <div id="cart-empty" class="cart-empty disabled">
+                <p>Tu cesta esta vacia...</p>
+                <i class="fa-solid fa-face-frown-open"></i>
+            </div>
+                
+            <div id="incart-items" class="incart-items disabled">
+
+                <!-- Este contenido se va a cargar con JS -->
+
+            </div>
+
+            <div id="cart-paid" class="cart-paid disabled">
+                <p>Mchas gracias por tu compra!</p>
+                <i class="fa-solid fa-face-smile-beam"></i>
+            </div>
+        </div>
+
+        <div class="navSide">
+            <h2>Resumen</h2>
+            <hr>
+            <div class="cupon-container">
+                <h3>Código de descuento</h3>
+                <div class="input-box">
+                    <div class="cart-action-right">
+                        <div class="cart-total">
+                            <i class="fa-solid fa-ticket-simple"></i>
+                            <input type="text" class="price-text" value="Escribe el código">
+                        </div>
+                        <button class="buy-btn">APLICAR</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="total-container">
+                <h3>TOTAL del pedido</h3>
+                <div class="cart-action-right">
+                    <div class="cart-total">
+                        <i class="fa-solid fa-wallet"></i>
+                        <!-- <p>TOTAL:</p> -->
+                        <p id="total">$200</p>
+                    </div>
+                    <button id="buy-btn" class="buy-btn">COMPRAR</i></button>
+                </div>
+            </div>
+
+            <div class="payment-container">
+                <h3>Método de pago</h3>
+                <ul class="payment-list">
+                    <li class="item checked">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">
+                            VISA CARD
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">
+                            MASTER CARD
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="checkbox">
+                            <i class="fa-solid fa-check check-icon"></i>
+                        </span>
+                        <span class="item-text">
+                            Pay Pal
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="./js/cestaScript.js" defer></script>
+<script src="./js/script.js" defer"></script>
+    
+</body>
+</html>
+
+<!--
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+||                                  ||
+||   By  Christian Andreas Brun     ||
+||                                  ||
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+-->

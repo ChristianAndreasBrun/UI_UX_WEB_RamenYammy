@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favIcon.png" type="image/x-icon">
+    <title>RAMEN YAMMY</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/contactStyle.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- CABECERA -->
+<header>
+    <div class="logo">
+        <a href="index.html" class="logoImg"><img src="./img/logoY.png" width="64px" height="64px"></a>
+        <a href="index.html"><h1>RAMEN YAMMY</h1></a>
+    </div>
+    <nav>
+        <li><a href="#"><button class="reserve-btn" type="button">RESERVAR</button></a></li>
+        <ul>
+            <li><a class="active">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="blog.html">Blog de Noticias</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <label for="check" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="actions">
+        <div class="cart-container">
+            <span id="cart-counter">0</span>
+            <a href="cesta.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a href="user.html" class="cart"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<div class="wrapper">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1 id="category-title"><span class="t1">Ponte en</span> <span class="t2">CONTACTO</span></h1>
+
+            <div class="inf-contact">
+                <div class="item">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Calle Caldero 7, 28004, Madrid</p>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>914933990</p>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Lunes a Domingo 12:30h - 16:30h y de 19:30h - 0:00h</p>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>inforamen@ramenyammy.com</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-split-1">
+                    <div class="contact-name">
+                        <h3>Nombre</h3>
+                        <input type="name">
+                    </div>
+                    <div class="contact-firstname">
+                        <h3>Apellido</h3>
+                        <input type="firstname">
+                    </div>
+                    <div class="contact-mail">
+                        <h3>Email</h3>
+                        <input type="mail">
+                    </div>
+                    <div class="contact-phone">
+                        <h3>Teléfono</h3>
+                        <input type="phone">
+                    </div>
+                </div>
+               
+                <div class="form-split-2">
+                    <div class="contact-subject">
+                        <h3>Asunto:</h3>
+                        <input type="subject">
+                    </div>
+                    <div class="contact-message">
+                        <h3>Mensaje:</h3>
+                        <input type="message">
+                    </div>
+                </div>
+
+                <div class="form-btn">
+                    <button>ENVIAR</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-img">
+            <img src="./img/bg5.jpg" alt="shop">
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOOTER SECTION -->
+<footer>
+    <a href="#home"><img src="./img/logoY.png" alt="" class="logo"></a>
+    <div class="social-container">
+        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+    <ul class="footer-menu">
+        <a class="menu-item">Legal</a>
+        <a class="menu-item">Cookies</a>
+        <a href="privacidad.html" class="menu-item">Privacidad</a>
+        <a class="menu-item">Envíos</a>
+        <a class="menu-item">Rembolsos</a>
+    </ul>
+    <span class="copyright">© 2024 RAMEN YAMMY. All rights reserved. | Designed by Christian Andreas Brun</span>
+</footer>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="./js/tiendaScript.js"></script>
+</body>
+</html>
+
+<!--
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+||                                  ||
+||   By  Christian Andreas Brun     ||
+||                                  ||
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+-->

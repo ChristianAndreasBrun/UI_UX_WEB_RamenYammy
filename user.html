@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favIcon.png" type="image/x-icon">
+    <title>RAMEN YAMMY</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/userSyle.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+<!-- CABECERA -->
+<header>
+    <div class="logo">
+        <a href="index.html" class="logoImg"><img src="./img/logoY.png" width="64px" height="64px"></a>
+        <a href="index.html"><h1>RAMEN YAMMY</h1></a>
+    </div>
+    <nav>
+        <li><a href="#"><button class="reserve-btn" type="button">RESERVAR</button></a></li>
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="blog.html">Blog de Noticias</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <label for="check" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <div class="actions">
+        <div class="cart-container">
+            <span id="cart-counter">0</span>
+            <a href="cesta.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a href="#"><i class="fa-solid fa-circle-user active"></i></a>
+    </div>
+</header>
+
+
+<!-- PROFILE -->
+<div class="wrapper">
+    <h1><span class="t1">Perfil</span> <span class="t2">de Usuario</span></h1>
+    <div class="user">
+        <div class="navSide">
+                <a href="#" class="btn active"><i class="fa-solid fa-user"></i> Perfil</a>
+                <a href="#" class="btn"><i class="fa-solid fa-lock"></i> Seguridad</a>
+                <a href="#" class="btn"><i class="fa-solid fa-mask"></i> Privacidad</a>
+                <a href="#" class="btn"><i class="fa-solid fa-credit-card"></i> Métodos de Pago</a>
+                <a href="#" class="btn"><i class="fa-solid fa-clock-rotate-left"></i>Historial de Compras</a>
+        </div>
+    
+        <div class="profile">
+            <div class="profile-header">
+                <h2>Datos Personales:</h2>
+                <a href="#" class="btn-edit" id="toggleEdit">EDITAR <i class="fa-solid fa-pen"></i></a>
+            </div>
+            <span class="line"></span>
+            <div class="profile-card-1">
+                <div class="profile-img">
+                    <img src="./img/avatar.webp" alt="" height="100px" width="100px">
+                    <button>Editar foto <i class="fa-solid fa-image"></i></button>
+                </div>
+                <div class="profile-data profile-mail">
+                    <h3>Correo Electrónico</h3>
+                    <input type="email" placeholder="email@mail.com" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-name">
+                    <h3>Nombre</h3>
+                    <input type="text" placeholder="Nombre" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-firstname">
+                    <h3>Apellido</h3>
+                    <input type="text" placeholder="Apellido" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-phone">
+                    <h3>Teléfono</h3>
+                    <input type="phone" placeholder="+00-00-0000-000" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-birth">
+                    <h3>Fecha de Nacimiento</h3>
+                    <input type="birth" placeholder="00 / 00 /0000" readonly class="readonly">
+                </div>
+            </div>
+            <br><br><br>
+            <h2>Dirección de Envío:</h2>
+            <span class="line"></span>
+            <div class="profile-data profile-card-2">
+                <div class="profile-direction">
+                    <h3>Dirección</h3>
+                    <input type="direction" placeholder="Dirección" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-direction-2">
+                    <h3>Dirección 2 (Puerta, Escalera, Piso... etc.)</h3>
+                    <input type="direction" placeholder="Puerta, Escalera, Piso..." readonly class="readonly">
+                </div>
+                <div class="profile-data profile-province">
+                    <h3>Provincia</h3>
+                    <input type="province" placeholder="Provincia" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-zip">
+                    <h3>Código Postal</h3>
+                    <input type="zip" placeholder="Código Postal" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-location">
+                    <h3>Localidad</h3>
+                    <input type="location" placeholder="Localidad" readonly class="readonly">
+                </div>
+                <div class="profile-data profile-country">
+                    <h3>País</h3>
+                    <input type="country" placeholder="País" readonly class="readonly">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOOTER SECTION -->
+<footer>
+    <a href="#home"><img src="./img/logoY.png" alt="" class="logo"></a>
+    <div class="social-container">
+        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+    <ul class="footer-menu">
+        <a class="menu-item">Legal</a>
+        <a class="menu-item">Cookies</a>
+        <a href="privacidad.html" class="menu-item">Privacidad</a>
+        <a class="menu-item">Envíos</a>
+        <a class="menu-item">Rembolsos</a>
+    </ul>
+    <span class="copyright">© 2024 RAMEN YAMMY. All rights reserved. | Designed by Christian Andreas Brun</span>
+</footer>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="./js/userScript.js"></script>
+<script src="./js/tiendaScript.js"></script>
+
+</body>
+</html>
+
+<!--
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+||                                  ||
+||   By  Christian Andreas Brun     ||
+||                                  ||
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+-->
